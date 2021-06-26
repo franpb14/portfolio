@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import Skill from '/components/skill.js'
+import Skill from './skill.js'
 
 export default function Skills() {
   return (
