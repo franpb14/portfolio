@@ -3,9 +3,12 @@ import 'bootstrap/dist/css/bootstrap.css'
 import Header from '../components/header.js'
 import Presentacion from '../components/presentacion.js'
 import Skills from '../components/skills.js'
+import BotonExperienceSkill from '../components/botonExperienceSkill.js'
 import { useEffect, useState } from 'react';
+import Footer from '../components/footer'
 
 export default function Home() {
+
   return (
     <div className="b-nw">
       <Head>
@@ -17,7 +20,10 @@ export default function Home() {
       </div>
       <Presentacion></Presentacion>
       <div className="mt-3"></div>
-      <Skills></Skills>
+      <BotonExperienceSkill></BotonExperienceSkill>
+      <div className="mt-3"></div>
+      <Footer></Footer>
+      
       
     </div>
   )
