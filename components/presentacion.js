@@ -4,7 +4,7 @@ export default function Presentacion() {
   return (
     <div className="container presentacion_principal">
       <div className="row justify-content-center">
-        <div className="row justify-content-center b-nn mt-4 col-10">
+        <div className="row justify-content-center b-nn mt-4 col-11 rounded">
           <div className="col-lg-4 col-md-6"><img className="mt-4 mb-4" src="/negraFran2.jpg"></img></div> 
           <div className="col-lg-8 col-md-6">
             <div className="row justify-content-center mt-4">

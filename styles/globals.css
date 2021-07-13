@@ -25,7 +25,7 @@ a {
 }
 
 .b-nn{
-  background-color: #373a3c;
+  background-color: #373a3c!important;
 }
 
 .c-nn {
@@ -237,4 +237,28 @@ img {
 li span {
   display: inline-table;
   vertical-align: middle;
+}
+
+.overflow {
+  height: 50%;
+  overflow: hidden;
+}
+
+.overflow .card-img-top {
+  transform: scale(1);
+  transition: all 0.2s ease-in-out;
+}
+
+.overflow .card-img-top:hover {
+  transform: scale(1.8);
+}
+
+footer {
+  height: 53px;
+  color: white;
+}
+footer a {
+  color:white;
+  font-size: 30px;
+  
 }
