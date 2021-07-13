@@ -4,7 +4,7 @@ export default function Header() {
   return (
     <div className="container">
       <div className="row justify-content-center">
-        <header className="col-sm-11">
+        <header className="col-sm-12">
       
           <a target="_blank" className="logo" href="https://github.com/franpb14">Fran Perejón</a>
           
