@@ -24,7 +24,7 @@ export default function Experience() {
                 <hr></hr>
                 
                 <div className="row justify-content-center">
-                  <a className="btn col-sm-3 col-6 btn-light" href="">Know More</a></div>
+                  <a className="btn col-sm-3 col-6 btn-outline-dark" href="">Know More</a></div>
                 </div>
               </div>      
 
