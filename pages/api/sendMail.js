@@ -1,3 +1,4 @@
+import { AddToQueueRounded } from '@material-ui/icons';
 
 
 const sgMail = require('@sendgrid/mail')
@@ -18,7 +19,7 @@ export default (req, res) => {
     Un saludo.`,
   }
   res.statusCode = 200
-  res.json({ name: 'Gracias' })
+  res.json({ name: msg, apikey: process.env.NEXT_PUBLIC_SENGRID_KEY.substring(0, 10)})
   sgMail
     .send(msg)
     .then(() => {
@@ -27,4 +28,5 @@ export default (req, res) => {
     .catch((error) => {
       console.error(error)
     })
+  
   }
