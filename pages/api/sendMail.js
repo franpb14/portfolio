@@ -1,7 +1,7 @@
 
 
 const sgMail = require('@sendgrid/mail')
-sgMail.setApiKey(process.env.customKey)
+sgMail.setApiKey(process.env.NEXT_PUBLIC_SENGRID_KEY)
 export default (req, res) => {
   const { name_, email,  client_message} = req.body;
   const msg = {
