@@ -24,10 +24,12 @@ export default function Presentacion() {
         "method": "POST",
         "headers": { "content-type": "application/json" },
         "body": data
+      }).then(response=> {
+        console.log(response);
       })
       setModalOpen(!modalOpen)
     } catch (error) {
-        // toast error message. whatever you wish 
+        console.log(error)
     }
 
   }
