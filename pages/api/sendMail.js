@@ -1,6 +1,3 @@
-import { AddToQueueRounded } from '@material-ui/icons';
-
-
 const sgMail = require('@sendgrid/mail')
 sgMail.setApiKey(process.env.NEXT_PUBLIC_SENGRID_KEY)
 export default (req, res) => {
@@ -23,11 +20,11 @@ export default (req, res) => {
     .send(msg)
     .then((response) => {
       console.log('Email sent')
-      res.json({ name: msg, apikey: process.env.NEXT_PUBLIC_SENGRID_KEY.substring(0, 10), sgMail: sgMail, response: response})
+      res.json({ name: msg, response: response})
     })
     .catch((error) => {
       console.error(error)
-      res.json({ name: msg, apikey: process.env.NEXT_PUBLIC_SENGRID_KEY.substring(0, 10), sgMail: sgMail, error: error})
+      res.json({ name: msg, error: error})
     })
   
   }
