@@ -19,7 +19,7 @@ export default (req, res) => {
     Un saludo.`,
   }
   res.statusCode = 200
-  res.json({ name: msg, apikey: process.env.NEXT_PUBLIC_SENGRID_KEY.substring(0, 10)})
+  res.json({ name: msg, apikey: process.env.NEXT_PUBLIC_SENGRID_KEY.substring(0, 10), sgMail: sgMail})
   sgMail
     .send(msg)
     .then(() => {
