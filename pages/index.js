@@ -13,7 +13,6 @@ export default function Home() {
   return (
     <div className="b-nw">
       <Head>
-        <link rel="icon" href="/engineer.png"/>
         <title>Fran Perejon - Portfolio</title>
       </Head>
       <div className="b-nn container-fluid">
