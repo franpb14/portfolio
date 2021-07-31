@@ -20,7 +20,7 @@ export default function Home() {
         </Header>
       </div>
       <Presentacion></Presentacion>
-      <div className="mt-3"></div>
+      <div id="experience" className="mt-3"></div>
       <BotonExperienceSkill></BotonExperienceSkill>
       <div className="mt-5"></div>
       <Projects></Projects>

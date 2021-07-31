@@ -3,8 +3,8 @@ sgMail.setApiKey(process.env.NEXT_PUBLIC_SENGRID_KEY)
 export default (req, res) => {
   const { name_, email,  client_message} = req.body;
   const msg = {
-    to: 'franperejonbarrios@gmail.com', // Change to your recipient
-    from: 'desarrolladorfpb@gmail.com', // Change to your verified sender
+    to: 'franperejonbarrios@gmail.com',
+    from: 'desarrolladorfpb@gmail.com',
     subject: `Página personal: ${name_}`,
     text: `${name_} quiere contactar contigo y además te ha escrito el siguiente mensaje: \n
       ${client_message}. \n

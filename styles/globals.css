@@ -254,11 +254,35 @@ li span {
 }
 
 footer {
-  height: 53px;
+  height: 45px;
   color: white;
 }
+
 footer a {
   color:white;
   font-size: 30px;
-  
+}
+
+.rocket {
+  bottom: 15px;
+  font-size: 30px;
+  left: 40px;
+  position:absolute;
+  color: #373a3c;
+}
+
+.rocket:hover {
+  color: #696e70;
+}
+
+.code {
+  bottom: 15px;
+  font-size: 30px;
+  right: 40px;
+  position:absolute;
+  color: #373a3c;
+}
+
+.code:hover {
+  color: #696e70;
 }

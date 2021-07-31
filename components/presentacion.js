@@ -33,7 +33,7 @@ export default function Presentacion() {
   }
 
   return (
-    <div className="container presentacion_principal">
+    <div id="aboutme" className="container presentacion_principal">
       <div className="row justify-content-center">
         <div className="row justify-content-center b-nn mt-4 col-11 rounded">
           <div className="col-lg-4 col-md-6"><img className="mt-4 mb-4" src="/negraFran2.jpg"></img></div> 
@@ -43,7 +43,7 @@ export default function Presentacion() {
               <h4>Software engineer</h4>
               <p>In November I will obtain my degree in software engineering. This career has taught me a lot and instructed me, 
                  among other things, in programming, which today is not only my job but also one of my hobbies.</p>
-              <div className="row justify-content-center">
+              <div className="row justify-content-center mt-4">
                 
                 <button className="btn col-lg-3 col-md-6 btn-outline-light mb-3" onClick={() => setModalOpen(!modalOpen)}>Contact me</button>
               </div>
@@ -70,21 +70,21 @@ export default function Presentacion() {
             <div className="form-group">
               <div className="col-md-12">
                 <label htmlFor="name">Name:</label>
-                <input  id="name" name="name" type="text" placeholder="First Name" className="form-control" 
+                <input  id="name" name="name" type="text" placeholder="First Name" className="form-control mt-1" 
                         value={name_} onChange={(e) => setName_(e.target.value)}/>
               </div>
             </div>
             <div className="form-group">
-              <div className="col-md-12">
-                <label htmlFor="clientEmail">Email:</label>
-                <input  id="clientEmail" name="clientEmail" type="text" placeholder="Email" className="form-control" 
+              <div className="col-md-12 mt-2">
+                <label htmlFor="clientEmail">Contact email:</label>
+                <input  id="clientEmail" name="clientEmail" type="text" placeholder="Email" className="form-control mt-1" 
                         value={clientEmail} onChange={(e) => setClientEmail(e.target.value)}/>
               </div>
             </div>
             <div className="form-group">
-              <div className="col-md-12">
+              <div className="col-md-12 mt-2">
                 <label htmlFor="clientMsg">Message:</label>
-                <textarea  id="clientMsg" name="clientMsg" type="text" placeholder="Type your message" className="form-control" 
+                <textarea  id="clientMsg" name="clientMsg" type="text" placeholder="Type your message" className="form-control mt-1" 
                         value={clientMsg} onChange={(e) => setClientMsg(e.target.value)}/>
               </div>
             </div>

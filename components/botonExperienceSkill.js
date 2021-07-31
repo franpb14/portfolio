@@ -30,7 +30,7 @@ function BotonExperienceSkill(props) {
     }
     function posicionaBarras(mostrarBarras){
       let barras = document.querySelectorAll(".barra");
-      let porcentajes = ["92%", "88%", "80%", "60%", "35%", "20%"]
+      let porcentajes = ["92%", "88%", "82%", "60%", "35%", "20%"]
       let i=0;
       if(mostrarBarras) {
         document.getElementById("containerSkills").style.opacity = "1";
