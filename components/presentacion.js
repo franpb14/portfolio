@@ -6,31 +6,46 @@ import { Modal, ModalBody, ModalFooter } from "reactstrap";
 export default function Presentacion() {
 
   const [modalOpen, setModalOpen] = useState(false);
+  const [clasesEmail, setClasesEmail] = useState("form-control mt-1");
   const [formError, setFormError] = useState({ error: "" });
   const [name_, setName_] = useState("");
   const [clientEmail, setClientEmail] = useState("");
   const [clientMsg, setClientMsg] = useState("");
  
   const sendMail = async () => {
-    const data = JSON.stringify({
-      name_: name_,
-      email: clientEmail,
-      client_message: clientMsg,
-      subject: querySubject,
-    });
-    try {
-      await fetch("/api/sendMail", {
-        "method": "POST",
-        "headers": { "content-type": "application/json" },
-        "body": data
-      })
-      setModalOpen(!modalOpen)
-    } catch (error) {
+    if(re.test(String(clientEmail).toLowerCase())){
+      const data = JSON.stringify({
+        name_: name_,
+        email: clientEmail,
+        client_message: clientMsg,
+      });
+      try {
+        await fetch("/api/sendMail", {
+          "method": "POST",
+          "headers": { "content-type": "application/json" },
+          "body": data
+        })
+        setModalOpen(!modalOpen);
+        alert("It has been sent successfully! As soon as I read it I will contact you via email.");
+      } catch (error) {
+        alert("oops, something went wrong, sorry for the inconvenience.");
         console.log(error);
+      }
+    } else {
+      setClasesEmail("form-control mt-1 is-invalid");
     }
-
   }
+  const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
+  const validacionEmail = (e) => {
+    setClientEmail(e.target.value);
+    let isValid = re.test(String(e.target.value).toLowerCase());
+    if(isValid){
+      setClasesEmail("form-control mt-1 is-valid");
+    } else {
+      setClasesEmail("form-control mt-1 is-invalid");
+    }
+  }
   return (
     <div id="aboutme" className="container presentacion_principal">
       <div className="row justify-content-center">
@@ -78,8 +93,8 @@ export default function Presentacion() {
             <div className="form-group">
               <div className="col-md-12 mt-2">
                 <label htmlFor="clientEmail">Contact email:</label>
-                <input  id="clientEmail" name="clientEmail" type="text" placeholder="Email" className="form-control mt-1" 
-                        value={clientEmail} onChange={(e) => setClientEmail(e.target.value)}/>
+                <input  id="clientEmail" name="clientEmail" type="text" placeholder="Email" className={clasesEmail} 
+                        value={clientEmail} onChange={(e) => validacionEmail(e)}/>
               </div>
             </div>
             <div className="form-group">
@@ -98,7 +113,7 @@ export default function Presentacion() {
         <button type="submit" className="btn btn-outline-dark"
                   onClick={(e) => {
                     e.preventDefault();
-                    sendMail(name_, clientEmail, clientMsg, querySubject);
+                    sendMail(name_, clientEmail, clientMsg);
                   }}>Send</button>
       </ModalFooter>
         
