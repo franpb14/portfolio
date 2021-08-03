@@ -2,9 +2,7 @@ import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.css'
 import Header from '../components/header.js'
 import Presentacion from '../components/presentacion.js'
-import Skills from '../components/skills.js'
 import BotonExperienceSkill from '../components/botonExperienceSkill.js'
-import { useEffect, useState } from 'react';
 import Footer from '../components/footer';
 import Projects from '../components/projects';
 

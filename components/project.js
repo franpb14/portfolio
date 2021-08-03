@@ -22,7 +22,7 @@ function Project(props) {
           />
         </div>
         <div className="card-body bg-light">
-          <h3>{props.name}</h3>
+          <h3 className="col-12 text-center">{props.name}</h3>
           <p>{props.description}</p>
           <div className="col-12 columnasRocket">
             <a className="rocket" target="_blank" href={props.urlRocket}><FontAwesomeIcon icon={faRocket}></FontAwesomeIcon></a>

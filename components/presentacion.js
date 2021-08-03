@@ -7,7 +7,6 @@ export default function Presentacion() {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [formError, setFormError] = useState({ error: "" });
-  const [querySubject, setQuerySetsubject] = useState("");
   const [name_, setName_] = useState("");
   const [clientEmail, setClientEmail] = useState("");
   const [clientMsg, setClientMsg] = useState("");
