@@ -12,11 +12,17 @@ export default function Projects() {
               <div className="col-md-12 my-2">
                 <h1 className="text-center text-light">My Projects</h1>
               </div>
-              <Project  name="AgrupaForm" description="With this project you can group the answers that users give to a google form, for example, by age." 
+              <Project  name="AgrupaForm" index="1"
+                        description="The purpose/objective/mission/goal of this web application is offering the user the ability of grouping answers 
+                                      from a Google Forms questionnaire taking into account different variables. 
+                                      For example, the user would be able to segregate answers depending on age and favourite season of the year." 
                         image="agrupaform.png" urlRocket="https://agrupaform.tk/" urlCode="https://github.com/franpb14/AgrupaForm"></Project>
-              <Project  name="Eatsy landing page" description="I did the entire landing for a degree subject, using NextJS, Bootstrap and Firebase." 
+              <Project  name="Eatsy landing page" index="2"
+                        description="I was in charge of developing the entire landing of a web application for a degree subject. 
+                                      The tools I used were NextJS, Bootstrap and Firebase. " 
                         image="eatsylp2.png" urlRocket="https://eatsylp.tk/" urlCode="https://github.com/franpb14/eatsyLP"></Project>
-              <Project  name="This page" description="Obviously I also made this page complete." 
+              <Project  name="This page" index="3"
+                        description="Obviously I’ve also developed this page." 
                         image="thispage.png" urlRocket="https://franperejon.vercel.app/" urlCode="https://github.com/franpb14/portfolio"></Project>
                         
               <div className="col-md-12 mt-4">

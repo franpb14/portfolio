@@ -41,8 +41,10 @@ export default function Presentacion() {
             <div className="row justify-content-center mt-4">
               <h2>Francisco José Perejón Barrios</h2>
               <h4>Software engineer</h4>
-              <p>In November I will obtain my degree in software engineering. This career has taught me a lot and instructed me, 
-                 among other things, in programming, which today is not only my job but also one of my hobbies.</p>
+              <p>
+                In November I will obtain my degree in Software Engineering. This degree has instructed me in many varied aspects such as 
+                programming which as of today is not only my job but also one of my hobbies.
+              </p>
               <div className="row justify-content-center mt-4">
                 
                 <button className="btn col-lg-3 col-md-6 btn-outline-light mb-3" onClick={() => setModalOpen(!modalOpen)}>Contact me</button>
