@@ -13,7 +13,7 @@ export default function Projects() {
                 <h1 className="text-center text-light">My Projects</h1>
               </div>
               <Project  name="AgrupaForm" index="1"
-                        description="The purpose/objective/mission/goal of this web application is offering the user the ability of grouping answers 
+                        description="The mission of this web application is offering the user the ability of grouping answers 
                                       from a Google Forms questionnaire taking into account different variables. 
                                       For example, the user would be able to segregate answers depending on age and favourite season of the year." 
                         image="agrupaform.png" urlRocket="https://agrupaform.tk/" urlCode="https://github.com/franpb14/AgrupaForm"></Project>
