@@ -20,7 +20,7 @@ export default function Projects() {
               <Project  name="Eatsy landing page" index="2"
                         description="I was in charge of developing the entire landing of a web application for a degree subject. 
                                       The tools I used were NextJS, Bootstrap and Firebase. " 
-                        image="eatsylp2.png" urlRocket="https://eatsylp.tk/" urlCode="https://github.com/franpb14/eatsyLP"></Project>
+                        image="eatsylp2.png" urlRocket="https://eatsylp.vercel.app/" urlCode="https://github.com/franpb14/eatsyLP"></Project>
               <Project  name="This page" index="3"
                         description="Obviously I’ve also developed this page." 
                         image="thispage.png" urlRocket="https://franperejon.vercel.app/" urlCode="https://github.com/franpb14/portfolio"></Project>

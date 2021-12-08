@@ -23,8 +23,6 @@ export default function Home() {
       <div className="mt-5"></div>
       <Projects></Projects>
       <Footer></Footer>
-      
-      
     </div>
   )
 }
