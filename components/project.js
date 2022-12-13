@@ -6,9 +6,7 @@ import { faCode, faRocket } from '@fortawesome/free-solid-svg-icons';
 function Project(props) {
   useEffect(() => {
     let columnasRocket = document.querySelectorAll(".columnasRocket");
-    columnasRocket.forEach(el => {
-      el.style.height = getComputedStyle(document.querySelectorAll(".rocket")[0]).height;
-    });
+    columnasRocket.forEach(el => el.style.height = getComputedStyle(document.querySelectorAll(".rocket")[0]).height);
   });
 
   return (
