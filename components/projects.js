@@ -3,7 +3,6 @@ import Project from './project.js'
 
 export default function Projects() {
   return (
-
     <div id="projects" className="container">
       <div className="row justify-content-center">
         <div className="col-md-11">
@@ -27,8 +26,8 @@ export default function Projects() {
                         
               <div className="col-md-12 mt-4">
                 <div className="text-center">
-                  <a target="_blank" href="https://github.com/franpb14?tab=repositories">
-                    <a className="btn btn-outline-light mb-3">More on GitHub</a>
+                  <a target="_blank" className="btn btn-outline-light mb-3" href="https://github.com/franpb14?tab=repositories">
+                    More on GitHub
                   </a>
                 </div>
               </div>
