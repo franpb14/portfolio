@@ -19,7 +19,7 @@ export default (req, res) => {
   sgMail
     .send(msg)
     .then((response) => {
-      console.log('Email sent')
+      console.log(response)
       res.json({ name: msg, response: response})
     })
     .catch((error) => {
