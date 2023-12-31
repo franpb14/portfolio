@@ -3,7 +3,7 @@ import React, { useState } from "react";
 
 import { Modal, ModalBody, ModalFooter } from "reactstrap";
 
-export default function Presentacion() {
+export default function Presentation() {
 
   const [modalOpen, setModalOpen] = useState(false);
   const [clasesEmail, setClasesEmail] = useState("form-control mt-1");
@@ -11,7 +11,7 @@ export default function Presentacion() {
   const [name_, setName_] = useState("");
   const [clientEmail, setClientEmail] = useState("");
   const [clientMsg, setClientMsg] = useState("");
- 
+
   const sendMail = async () => {
     if (re.test(String(clientEmail).toLowerCase())) {
       const data = JSON.stringify({
@@ -45,13 +45,13 @@ export default function Presentacion() {
     <div id="aboutme" className="container presentacion_principal">
       <div className="row justify-content-center">
         <div className="row justify-content-center b-nn mt-4 col-11 rounded">
-          <div className="col-lg-4 col-md-6"><img className="mt-4 mb-4" src="/negraFran2.jpg"></img></div> 
+          <div className="col-lg-4 col-md-6"><img className="mt-4 mb-4" src="/negraFran2.jpg"></img></div>
           <div className="col-lg-8 col-md-6">
             <div className="row justify-content-center mt-4">
               <h2>Francisco José Perejón Barrios</h2>
               <h4>Software engineer</h4>
               <p>
-                In November I will obtain my degree in Software Engineering. This degree has instructed me in many varied aspects such as 
+                I am a graduate in "Computer Engineering. Software Engineering". This degree has instructed me in many varied aspects such as
                 programming which as of today is not only my job but also one of my hobbies.
               </p>
 
@@ -81,21 +81,21 @@ export default function Presentacion() {
             <div className="form-group">
               <div className="col-md-12">
                 <label htmlFor="name">Name:</label>
-                <input id="name" name="name" type="text" placeholder="First Name" className="form-control mt-1" 
+                <input id="name" name="name" type="text" placeholder="First Name" className="form-control mt-1"
                        value={name_} onChange={(e) => setName_(e.target.value)}/>
               </div>
             </div>
             <div className="form-group">
               <div className="col-md-12 mt-2">
                 <label htmlFor="clientEmail">Contact email:</label>
-                <input id="clientEmail" name="clientEmail" type="text" placeholder="Email" className={clasesEmail} 
+                <input id="clientEmail" name="clientEmail" type="text" placeholder="Email" className={clasesEmail}
                        value={clientEmail} onChange={(e) => validacionEmail(e)}/>
               </div>
             </div>
             <div className="form-group">
               <div className="col-md-12 mt-2">
                 <label htmlFor="clientMsg">Message:</label>
-                <textarea id="clientMsg" name="clientMsg" type="text" placeholder="Type your message" className="form-control mt-1" 
+                <textarea id="clientMsg" name="clientMsg" type="text" placeholder="Type your message" className="form-control mt-1"
                           value={clientMsg} onChange={(e) => setClientMsg(e.target.value)}/>
               </div>
             </div>

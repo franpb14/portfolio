@@ -23,8 +23,8 @@ function Project(props) {
           <h3 className="col-12 text-center">{props.name}</h3>
           <p>{props.description}</p>
           <div className="col-12 columnasRocket">
-            <a className="rocket" target="_blank" href={props.urlRocket}><FontAwesomeIcon icon={faRocket}></FontAwesomeIcon></a>
-            <a className="code" target="_blank" href={props.urlCode}><FontAwesomeIcon icon={faCode}></FontAwesomeIcon></a>
+            <a className={`rocket ${props.urlRocket === 'false' ? 'disabled' : '' }`} target="_blank" disabled href={props.urlRocket}><FontAwesomeIcon icon={faRocket}></FontAwesomeIcon></a>
+            <a className={`code ${props.urlCode == 'false' ? 'disabled' : '' }`} target="_blank" href={props.urlCode}><FontAwesomeIcon icon={faCode}></FontAwesomeIcon></a>
           </div>
         </div>
       </div>

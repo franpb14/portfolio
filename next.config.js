@@ -1,5 +1,5 @@
 module.exports = {
   env: {
-    NEXT_PUBLIC_SENGRID_KEY: process.env.NEXT_PUBLIC_SENGRID_KEY,
+    RESEND_API_KEY: process.env.RESEND_API_KEY,
   },
 }

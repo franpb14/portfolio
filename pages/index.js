@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import 'bootstrap/dist/css/bootstrap.css'
 import Header from '../components/header.js'
-import Presentacion from '../components/presentacion.js'
+import Presentation from '../components/presentation.js'
 import BotonExperienceSkill from '../components/botonExperienceSkill.js'
 import Footer from '../components/footer';
 import Projects from '../components/projects';
@@ -17,7 +17,7 @@ export default function Home() {
         <Header>
         </Header>
       </div>
-      <Presentacion></Presentacion>
+      <Presentation></Presentation>
       <div id="experience" className="mt-3"></div>
       <BotonExperienceSkill></BotonExperienceSkill>
       <div className="mt-5"></div>

@@ -1,6 +1,6 @@
 {
-  "name": "nextjs",
-  "version": "0.1.0",
+  "name": "portfoliofran",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -14,11 +14,11 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "@material-ui/core": "^4.12.1",
     "@material-ui/icons": "^4.11.2",
-    "@sendgrid/mail": "^7.4.5",
     "bootstrap": "^5.0.0-beta3",
-    "next": "13.x",
+    "next": "14.x",
     "react": "18.2.0",
     "react-dom": "18.2",
-    "reactstrap": "^8.9.0"
+    "reactstrap": "^8.9.0",
+    "resend": "^2.1.0"
   }
 }
